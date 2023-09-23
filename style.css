@@ -25,7 +25,7 @@ html{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    background: #7a82ab;
 }
 .navbar .max-width{
     display: flex;
@@ -97,13 +97,13 @@ html{
 /* home section styling */
 .home{
     display: flex;
-    background: url("a3.jpg") no-repeat center;
+    background-size: cover;
     height: 100vh;
     color: #fff;
     min-height: 1500px;
     font-family: 'Ubuntu', sans-serif;
     background-attachment: fixed;
-    background-size: cover;
+    background: url("12.JPG") no-repeat center;
 }
 .home .max-width{
     margin: auto 0 auto 40px;
@@ -115,16 +115,18 @@ html{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
-    color: rgb(10, 10, 10);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 
 }
 .home .home-content .text-3{
-    font-size: 25px;
+    font-size: 55px;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
     color: crimson;
-    font-weight: 800;
+    font-weight: 1000;
+    text-shadow: 1px 1px 2px pink;
     
 }
 
@@ -239,7 +241,7 @@ section .title::after{
 /* services section styling */
 .services, .teams{
     color: #fff;
-    background: #111;
+    background: #7a82ab;
 }
 .services .title::before,
 .teams .title::before{
@@ -247,12 +249,12 @@ section .title::after{
 }
 .services .title::after,
 .teams .title::after{
-    background: #111;
+    background: #f1e4f3;
     content: "на тое";
 }
 .services .services-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: #79addc;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
@@ -369,7 +371,7 @@ section .title::after{
 
 }
 .teams .carousel .card{
-    background: #222;
+    background: #79addc;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -394,8 +396,8 @@ section .title::after{
     margin-bottom: 10px 0 7px 0;
 }
 .teams .carousel .card img{
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
     /* border-radius: 50%; */
     border: 5px solid crimson;
@@ -551,6 +553,12 @@ footer span a:hover{
     .home .max-width{
         margin-left: 0px;
     }
+
+    .home {
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 1104px) {
@@ -571,6 +579,11 @@ footer span a:hover{
     .app-image img{
         max-height: 600px;
         padding: 10px;
+    }
+    .home {
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
     }
 }
 
@@ -610,6 +623,17 @@ footer span a:hover{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+    }
+    .home {
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        max-width: 100%;
+        height: auto;
     }
     .home .home-content .text-2{
         font-size: 70px;
@@ -651,7 +675,7 @@ footer span a:hover{
         padding: 0 23px;
     }
     .home .home-content .text-3{
-        font-size: 20px;
+        font-size: 30px;
     }
     .home .home-content .text-3{
         font-style: 32px;
@@ -665,6 +689,18 @@ footer span a:hover{
     .app-image img{
         max-height: 350px;
     }
+    .home {
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        max-width: 100%;
+        height: auto;
+    }
+    
 }
 
 @media (max-width: 500px) {
@@ -679,6 +715,18 @@ footer span a:hover{
     }
     .app-image img{
         max-height: 200px;
+    }
+
+    .home {
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        max-width: 100%;
+        height: auto;
     }
 }
 
